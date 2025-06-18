@@ -1,0 +1,73 @@
+# =============== PYTHON GENERAL ====================
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+__pycache__/
+.Python
+env/
+venv/
+ENV/
+env.bak/
+*.pyo
+*.pyd
+
+# =============== JUPYTER ============================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# =============== DATA SCIENCE / OUTPUTS =============
+.DS_Store
+*.log
+*.csv~
+*.zip
+*.h5
+*.db
+*.sqlite
+*.xls
+*.xlsx
+*.pkl
+*.joblib
+*.parquet
+*.feather
+
+# ⚠️ NO ignores la carpeta 'data/' si necesitas subir el CSV
+# data/
+!data/goldenmetrics_dataset_v2.csv
+
+# =============== VIRTUAL ENVIRONMENTS ===============
+luxmetrics/
+*/luxmetrics/
+*/env/
+*/.env/
+*.virtualenv
+
+# =============== VS CODE ============================
+.vscode/
+*.code-workspace
+
+# =============== SYSTEM FILES ========================
+*.bak
+*.tmp
+*.swp
+*~
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# =============== MAC OS =============================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =============== GIT ================================
+.gitignore
+.gitmodules
+*.orig
+
+# =============== REQUIREMENTS AND CONFIG =============
+pip-log.txt
+pip-delete-this-directory.txt
