@@ -115,21 +115,12 @@ The analysis was structured in 7 sections:
 
 ---
 
-## 🚀 How to Reproduce
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/CarlosRomanM/GoldenMetrics-EDA.git
-cd GoldenMetrics-EDA
-
----
 👤 Author
 Carlos Román Monje
 Data Analyst & AI Solutions
 📍 Based in Spain
-🔗 LinkedIn Profile
-🌐 Personal Portfolio
+[LinkedIn Profile](https://www.linkedin.com/in/carlosromanm/))
+[Visit my Portfolio](https://cromanmonje.wixsite.com/my-site-3)
 
 
 
