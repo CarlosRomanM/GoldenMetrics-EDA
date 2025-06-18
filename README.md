@@ -115,12 +115,15 @@ The analysis was structured in 7 sections:
 
 ---
 
-👤 Author
-Carlos Román Monje
+## 👤 Author
+
+**Carlos Román Monje**  
 Data Analyst & AI Solutions
-📍 Based in Spain
-[LinkedIn Profile](https://www.linkedin.com/in/carlosromanm/))
-[Visit my Portfolio](https://cromanmonje.wixsite.com/my-site-3)
+📍 Based in Spain  
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/carlosromanmonje)  
+🌐 [Visit my Portfolio](https://cromanmonje.wixsite.com/my-site-3)
+
 
 
 
