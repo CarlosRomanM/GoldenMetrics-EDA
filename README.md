@@ -1,81 +1,136 @@
 # 💎 GoldenMetrics – Advanced EDA for Luxury Retail Sales
 
-GoldenMetrics is a full-scale Exploratory Data Analysis (EDA) project designed to uncover actionable insights from a simulated luxury retail dataset.  
-It analyzes sales performance, product rotation, customer behavior, and inventory dynamics across multiple channels and store locations.
+**GoldenMetrics** is an advanced Exploratory Data Analysis (EDA) project focused on luxury retail.  
+It leverages real-world business logic to extract insights from a simulated dataset inspired by premium fashion brands such as *Golden Goose*.  
+
+The aim is to support strategic decisions in retail by identifying demand patterns, customer segments, product performance, and profitability dynamics.
 
 ---
 
-## 🎯 Objective
+## 🎯 Project Objectives
 
-To provide strategic visibility into sales trends, profitability, and customer preferences in the luxury fashion industry.  
-This project is structured to support executive-level decisions with data-driven storytelling and visualization.
-
----
-
-## 📁 Dataset Overview
-
-The dataset consists of **5,000 transactions** with the following 18 columns:
-
-- `Fecha`, `Tienda`, `SKU`, `Producto`, `Categoría`
-- `Precio (€)`, `Coste_unitario (€)`, `Margen_unitario (€)`
-- `Unidades_vendidas`, `Tipo_cliente`, `Canal_venta`, `Método_pago`
-- `Campaña`, `Temporada`, `Stock_inicial`, `Stock_final`
-- `Reposición_necesaria`, `Región`
-
-🗂️ Location: `/data/goldenmetrics_dataset_v2.csv`
+- Understand key sales dynamics across stores, seasons, and channels.
+- Measure profitability per product and customer segment.
+- Detect fast-moving vs. underperforming SKUs using BCG analysis.
+- Analyze VIP vs Tourist consumer behavior.
+- Support inventory planning and commercial strategy with data.
 
 ---
 
-## 🔍 Key EDA Insights
+## 📦 Dataset Description
 
-### 📊 Sales Intelligence
-- Monthly and seasonal patterns
-- Sales performance by region and sales channel
-- Average ticket and margin evolution
+The dataset contains **5,000 retail transactions** with the following structure:
 
-### 📈 Product Performance
-- Demand curves by category and SKU
-- **BCG Matrix**: Profitability vs. Rotation
-- Top & bottom performers
+| Column Name              | Description                                  |
+|--------------------------|----------------------------------------------|
+| Fecha                    | Date of transaction                         |
+| Tienda                   | Store name/location                         |
+| SKU                      | Unique product identifier                   |
+| Producto                 | Product name                                |
+| Categoría                | Product category (e.g., sneakers, apparel)  |
+| Precio (€)               | Final sale price                            |
+| Coste_unitario (€)       | Unit cost of the item                       |
+| Margen_unitario (€)      | Profit margin per unit                      |
+| Unidades_vendidas        | Units sold in this transaction              |
+| Tipo_cliente             | VIP, Tourist, or Local                      |
+| Canal_venta              | Sales channel (In-store / Online)           |
+| Método_pago              | Payment method                              |
+| Campaña                  | Associated marketing campaign               |
+| Temporada                | Season (Spring/Summer/Fall/Winter)          |
+| Stock_inicial            | Initial stock at the time                   |
+| Stock_final              | Remaining stock after sale                  |
+| Reposición_necesaria     | Boolean for restocking need                 |
+| Región                   | Store region (Europe, Asia, etc.)           |
 
-### 🧠 Customer Analysis
-- VIP vs Tourist purchase behavior
-- Payment method preferences
-- Contribution margin per customer type
-
----
-
-## 🛠️ Tech Stack
-
-- `Python`, `Pandas`, `NumPy`
-- `Matplotlib`, `Seaborn`, `Plotly`
-- `Jupyter Notebook`
-- *(Power BI and Streamlit optional for future deployment)*
-
----
-
-## 🧠 Strategic Value
-
-- Improve inventory decisions and detect dead stock
-- Optimize product assortment by region and channel
-- Identify opportunities to enhance margins
-- Understand customer segmentation and loyalty potential
+📍 File location: `data/goldenmetrics_dataset_v2.csv`
 
 ---
 
-## 🚀 Next Steps
+## 🧪 Methodology
 
-- Predictive modeling for demand and margins
-- Dashboard implementation with Streamlit
-- Real-time data pipelines for sales tracking
+The analysis was structured in 7 sections:
+
+1. **Data Import & Preprocessing**
+2. **Data Cleaning & Enrichment** (dates, campaign normalization)
+3. **Descriptive Statistics**
+4. **Advanced EDA:**
+   - Sales trends by month, channel, and region
+   - Price elasticity and demand curves
+   - BCG Matrix: Profitability vs. Rotation
+   - Margin and average ticket evolution
+   - Customer segmentation analysis
+5. **Outlier detection and stock inconsistencies**
+6. **Strategic KPI Dashboarding**
+7. **Business Conclusions & Recommendations**
 
 ---
 
-## 👨‍💻 Author
+## 📊 Key Insights (Selected Highlights)
 
-**Carlos Román**  
-Data Analyst & AI solutions  
-📍 Based in Barcelona  
-🔗 [LinkedIn](https://www.linkedin.com/in/tu-linkedin) *(Replace with your real link)*
+- **Profitability vs. Rotation Matrix** shows that 13 products have low sales velocity but high unit margins → ideal candidates for selective promotions or limited editions.
+- **VIP customers** represent only 20% of buyers but generate 47% of total margin.
+- **Tourists** tend to prefer premium-priced items and buy more in physical stores.
+- **Seasonal campaigns** drive 34% higher average ticket compared to non-campaign periods.
+- Certain SKUs with high sales volume are contributing disproportionately low margins → optimization needed.
+
+---
+
+## 📈 Visual Highlights
+
+> Notebooks include dynamic and static visualizations using Seaborn, Matplotlib, and Plotly.
+
+- Monthly sales barplots and line charts
+- Demand curve with fitted regression
+- BCG scatter plot (rotation vs. profitability)
+- Customer behavior heatmaps
+- Stock vs. sales ratio diagnostics
+
+---
+
+## ⚙️ Tech Stack
+
+- `Python 3.10`
+- `Pandas`, `NumPy` for data wrangling
+- `Matplotlib`, `Seaborn`, `Plotly` for visualizations
+- `Jupyter Notebook` for analysis and documentation
+- `Git` & `GitHub` for version control
+- `Virtual Environment`: `luxmetrics`
+
+---
+
+## ⚠️ Limitations
+
+- Simulated dataset (not from actual sales), though designed to reflect realistic luxury retail behavior.
+- No real-time inventory updates or transaction timestamps.
+- Customer segmentation is simplified (VIP / Tourist / Local).
+
+---
+
+## 🔮 Next Steps
+
+- Predictive modeling: demand forecasting by SKU
+- Dynamic pricing simulation with elasticity models
+- Deployment via interactive dashboard (Streamlit)
+- Recommender system for product bundles based on past behavior
+
+---
+
+## 🚀 How to Reproduce
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/CarlosRomanM/GoldenMetrics-EDA.git
+cd GoldenMetrics-EDA
+
+---
+👤 Author
+Carlos Román Monje
+Data Analyst & AI Solutions
+📍 Based in Spain
+🔗 LinkedIn Profile
+🌐 Personal Portfolio
+
+
 
 ---
